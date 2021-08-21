@@ -21,6 +21,7 @@ To garantee an adequate degree of correspondece on the data calculated by the pr
 
 
 References:
+
 [1]: Vladimir Bazarov, Vigor Yang, Puneesh Puri (2004) 'Design and Dynamics of Jet and Swirl Injectors', in Vigor Yang, Mohammed Habiballah, James Hulka, Michael Popp, Paul Zarchan (ed.) Liquid Rocket Thrust Chambers:Aspects of Modeling, Analysis,and Design. : American Institute of Aeronautics and Astronautics, pp. 19-103.
 
 [2]: L. Bayvel, Z. Orzechowski (1993) Liquid Atomization, : Taylor & Francis Books.
