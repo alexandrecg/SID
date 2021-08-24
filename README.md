@@ -1,5 +1,5 @@
 # SID
-SID stands for Swirl Injector Design. This project originated from some of the codes I've developed for my graduation work.
+SID stands for Swirl Injector Design. This project originated from some of the codes I've developed for my undergraduate thesis.
 
 
 The original concept of the software developed in this project contemplates 3 tools.
