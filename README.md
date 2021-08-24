@@ -1,16 +1,16 @@
 # SID
-SID stands for Swirl Injector Design. This project originated from some of the codes I've developed for my undergraduate thesis.
+**SID** stands for **Swirl Injector Design**. This project originated from some of the codes I've developed for my undergraduate thesis.
 
 
 The original concept of the software developed in this project contemplates 3 tools.
 
-1) Design from input of basic injector properties:
+**1)** Design from input of basic injector properties:
   In general, if you have the basic engine parameters and a proposed injection plate design, you can use this information to get a corresponding injector geometry.
 
-2) Design from input of injector geometry:
+**2)** Design from input of injector geometry:
   Inputing injector geometry, flow and spray characteristics are predicted.
   
-3) Manufacturing tolerances evaluation:
+**3)** Manufacturing tolerances evaluation:
   Inputing injector geometry and manufacturing tolerances, a injector operation envelope is predicted.
   
   
@@ -20,7 +20,7 @@ To garantee an adequate degree of correspondece on the data calculated by the pr
 
 
 
-References:
+**References:**
 
 [1]: Vladimir Bazarov, Vigor Yang, Puneesh Puri (2004) 'Design and Dynamics of Jet and Swirl Injectors', in Vigor Yang, Mohammed Habiballah, James Hulka, Michael Popp, Paul Zarchan (ed.) Liquid Rocket Thrust Chambers:Aspects of Modeling, Analysis,and Design. : American Institute of Aeronautics and Astronautics, pp. 19-103.
 
@@ -28,6 +28,6 @@ References:
 
 [3]: Yuriy I. Khavkin (2004) Theory and Practice of Swirl Atomizers, : Taylor & Francis Books.
 
-[-]: A.  Alves,  “Estudo  e  Desenvolvimento  de  um  Sistema  de  Injeção  Centrífugo Bipropelente  Utilizado  e  Motor  Foguete  a  Propelente  Líquido.,”  Instituto Tecnológico de Aeronáutica, 2008.
+[--]: A.  Alves,  “Estudo  e  Desenvolvimento  de  um  Sistema  de  Injeção  Centrífugo Bipropelente  Utilizado  e  Motor  Foguete  a  Propelente  Líquido.,”  Instituto Tecnológico de Aeronáutica, 2008.
 
-[-]: A. H. Lefebvre e V. G. Mcdonell., Atomization and Sprays. 2th ed., CRC Press, Taylor & Francis Group, 2017. 
+[--]: A. H. Lefebvre e V. G. Mcdonell., Atomization and Sprays. 2th ed., CRC Press, Taylor & Francis Group, 2017. 
