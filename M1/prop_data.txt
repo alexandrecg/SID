@@ -1,0 +1,34 @@
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#File containing physical properties of different propellants or test fluids ##
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#####
+#Number of propellants
+3
+#Number of properties per propellant
+4
+#Propellant name (Reference: -----)
+Ethanol 95% (300 K)
+#Propellant density [kg/m³] (Reference: -----)
+800.00
+#Propellant Dynamic Viscosity [Pa.s] (Reference: -----)
+1.095e-3
+#Propellant Surface Tension [N/m.K] (Reference: -----)
+-8.32e-5
+#####
+#Propellant name (Reference: -----)
+Liquid Oxygen (90 K)
+#Propellant density [kg/m³] (Reference: -----)
+1141.00
+#Propellant Dynamic Viscosity [Pa.s] (Reference: -----)
+2.21e-3
+#Propellant Surface Tension [N/m.K] (Reference: -----)
+Nan
+#####
+#Propellant name (Reference: -----)
+Water (300 K)
+#Propellant density [kg/m³] (Reference: -----)
+996.56
+#Propellant Dynamic Viscosity [Pa.s] (Reference: -----)
+8.53e-4
+#Propellant Surface Tension [N/m.K] (Reference: -----)
+-1.514e-4

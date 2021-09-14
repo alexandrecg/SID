@@ -1,0 +1,64 @@
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#File containing basic injector parameters for geometry calculation#### ##### #
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#####
+####Injector ID
+A01 - Main - original
+####Propellant Configuration (Mono or Bi)
+Bi
+#00#Stage separation wall thickness [mm]
+1.0
+#01#ST1 Type of channel entrance (curved or straigth)
+curved
+#02#ST1 propellants
+Liquid Oxygen (90 K)
+#03#ST1 mass flow reference [g/s]
+76.70
+#04#ST1 DeltaP [bar]
+6.0
+#05#ST1 number of entrance channels
+6
+#06#ST1 Entrance Channels Diameter [mm]
+1.166
+#07#ST1 Entrance Channels Length [mm]
+2.334
+#08#ST1 Entrance Channel Chamfer [mm] (Equal to 0.0 if entrance type equal to "curved")
+0.0
+#09#ST1 Swirl Chamber Diameter [mm]
+8.12
+#10#ST1 Swirl Chamber Length [mm]
+8.692
+#11#ST1 Nozzle Diameter [mm]
+3.476
+#12#ST1 Nozzle Length [mm]
+6.085
+#13#ST1 Entrance Radius [mm]
+3.477
+#14#ST2 Type of channel entrance (curved or straigth)
+curved
+#15#ST2 propellants
+Ethanol 95% (300 K)
+#16#ST2 mass flow reference [g/s]
+38.30
+#17#ST2 DeltaP [bar]
+4.0
+#18#ST2 number of entrance channels
+6
+#19#ST2 Entrance Channels Diameter [mm]
+0.712
+#20#ST2 Entrance Channels Length [mm]
+2.852
+#21#ST2 Entrance Channel Chamfer [mm] (Equal to 0.0 if entrance type equal to "curved")
+0.00
+#22#ST2 Swirl Chamber Diameter [mm]
+8.342
+#23#ST2 Swirl Chamber Length [mm]
+3.814
+#24#ST2 Nozzle Diameter [mm]
+6.936
+#25#ST1 Nozzle Length [mm]
+1.734
+#26#ST2 Entrance Radius [mm]
+3.814
+#27#ST2 Exit Diameter [mm]
+8.874
