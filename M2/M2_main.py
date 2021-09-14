@@ -8,19 +8,19 @@ Created on Mon Sep  7 07:40:55 2020
 ##### Data File Slection #####
 
 #Foldername = "rev_A01"
+##### ##### #####
 Foldername = "tests"
-#Foldername = "REF"
+
 
 #Filename = "A01_FC_orig"
 #Filename = "A01_FC_mod"
 #Filename = "A01_Main_orig"
 #Filename = "A01_Main_mod"
-#Filename = "test_file"
+##### ##### #####
 #Filename = "RD0110_Ox"
 #Filename = "RD0110_Ox_M1"
 Filename = "RD0110_Ox_mod"
-#Filename = "RD0110"
-#Filename = "ALVES"
+
 
 from M2_Method_v2 import Method_2
 

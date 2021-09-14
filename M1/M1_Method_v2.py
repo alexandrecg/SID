@@ -72,10 +72,10 @@ class Method_1:
     
     def check_value(self, var_name, min_value, max_value, var_value):
         if(var_value > max_value):
-            print("ERROR: %s value out of bounds [%.2f, %.2f]"(var_name,min_value,max_value))
+            print("ERROR: %s value out of bounds [%.2f, %.2f] (current value: %.2f)"(var_name,min_value,max_value,var_value))
             
         elif(var_value < min_value):
-            print("ERROR: %s value out of bounds [%.2f, %.2f]"(var_name,min_value,max_value))
+            print("ERROR: %s value out of bounds [%.2f, %.2f] (current value: %.2f)"(var_name,min_value,max_value,var_value))
             
     
     ##### Métodos - Injetor Ideal #####
@@ -101,8 +101,8 @@ class Method_1:
     
     ## Calcula o valor do nº de Reynolds nos canais tangenciais do injetor
     def calc_reynolds_in(self,m_in,din_visc,n,r_in_orf,rho):
-        #return 2*m_in/(din_visc*n*np.pi*r_in_orf)
-        return 0.637*m_in/(np.sqrt(n)*r_in_orf*rho*din_visc)
+        return (2*m_in)/(din_visc*n*np.pi*r_in_orf)
+        #return (0.637*m_in)/(np.sqrt(n)*r_in_orf*rho*din_visc)
     
     ## calcula o valor do coeficiente de atrito (Lambda)
     def calc_friction_coef(self, reynolds_in):
@@ -125,7 +125,7 @@ class Method_1:
 
     ## calcula o parâmetro geométrico característico corrigido (A_eq) [Bazarov, eq(100)]
     def calc_geom_char_eq(self, r_in_pos, r_n, n, r_in_orf, friction_coef):
-        return r_in_pos*r_n/(n*r_in_orf**2+friction_coef/2*r_in_pos*(r_in_pos-r_n))
+        return (r_in_pos*r_n)/(n*r_in_orf**2+(friction_coef/2)*r_in_pos*(r_in_pos-r_n))
     
    
     ## Calcula o Valor do Coeficiente de Preenchimento corrigido (Phi_eq) [Bazarov, eq(99), eq(100)]
@@ -228,7 +228,7 @@ class Method_1:
             
             ##### Iteração do injetor real #####
             
-            self.rey_in_1 = self.calc_reynolds_in(self.fr.m_1*1e-3, self.mu_1, self.fr.n_1, self.r_in_orf_1*1e-3,self.fr.rho_1)
+            self.rey_in_1 = self.calc_reynolds_in(self.fr.m_1, self.fr.din_visc_1, self.fr.n_1, self.r_in_orf_1,self.fr.rho_1)
             
             self.lambda_1 = self.calc_friction_coef(self.rey_in_1)
             
@@ -236,9 +236,6 @@ class Method_1:
             self.check_value("ksi_1", 0, float("inf"), self.ksi_1)
             
             self.A_eq_1 = self.calc_geom_char_eq(self.r_in_pos_1, self.r_n_1, self.fr.n_1, self.r_in_orf_1, self.lambda_1)
-            
-            self.K_1 = self.A_eq_1/self.A_1
-            self.check_value("K_1", 0, 1, self.K_1)
             
             self.phi_eq_1 = self.calc_phi_eq(self.A_eq_1)
             
@@ -263,6 +260,11 @@ class Method_1:
             
             self.A_1 = self.r_in_pos_1*self.r_n_1/(self.fr.n_1*self.r_in_orf_1**2)
             
+            self.phi_1 = self.calc_phi_eq(self.A_1)
+            
+            self.K_1 = self.A_eq_1/self.A_1
+            self.check_value("K_1", 0, 1, self.K_1)
+            
             self.r_mn_1 = self.r_n_1*np.sqrt(1-self.phi_eq_1)
             
             self.r_mk_1 = self.r_mn_1 * np.sqrt(2*(1-self.phi_eq_1)/(2-self.phi_eq_1))
@@ -274,11 +276,16 @@ class Method_1:
             print("\nIt. %d)"%(self.contador+1))
             self.print_data("A_1", "%.4f"%(self.A_1))
             self.print_data("A_eq_1", "%.4f"%(self.A_eq_1))
+            self.print_data("K_1", "%.4f"%(self.K_1))
             self.print_data("Phi_1", "%.4f"%(self.phi_1))
             self.print_data("Phi_eq_1", "%.4f"%(self.phi_eq_1))
+            self.print_data("rey_in_1", "%.4f"%(self.rey_in_1))
+            self.print_data("ksi_1", "%.4f"%(self.ksi_1))
+            self.print_data("lambda_1", "%.4f"%(self.lambda_1))
             self.print_data("2Alpha ideal", "%.2f deg"%(self.alpha2_1))
             self.print_data("2Alpha real", "%.2f deg"%(self.alpha2_eq_1))
             self.print_data("R_n_1", "%.3f mm"%(self.r_n_1))
+            self.print_data("r_in_1", "%.3f mm"%(self.r_in_orf_1))
             
             self.contador += 1
         
@@ -387,7 +394,7 @@ class Method_1:
                 
                 self.r_in_pos_2 = self.fr.opening_coef_2*self.r_n_2
                 
-                self.r_in_orf_2 = np.sqrt(self.r_in_pos_2*self.r_n_2/(self.fr.n_2*self.A_2))
+                self.r_in_orf_2 = np.sqrt((self.r_in_pos_2*self.r_n_2)/(self.fr.n_2*self.A_2))
                 
                 self.inlet_diameter.append(2*self.r_in_orf_2)
                 
@@ -406,7 +413,7 @@ class Method_1:
                 
                 ##### Iteração do injetor real #####
                 
-                self.rey_in_2 = self.calc_reynolds_in(self.fr.m_2*1e-3, self.mu_2, self.fr.n_2, self.r_in_orf_2*1e-3, self.fr.rho_2)
+                self.rey_in_2 = self.calc_reynolds_in(self.fr.m_2, self.fr.din_visc_2, self.fr.n_2, self.r_in_orf_2, self.fr.rho_2)
                 
                 self.lambda_2 = self.calc_friction_coef(self.rey_in_2)
                 
@@ -414,9 +421,6 @@ class Method_1:
                 self.check_value("ksi_2", 0, float("inf"), self.ksi_2)
                 
                 self.A_eq_2 = self.calc_geom_char_eq(self.r_in_pos_2, self.r_n_2, self.fr.n_2, self.r_in_orf_2, self.lambda_2)
-                
-                self.K_2 = self.A_eq_2/self.A_2
-                self.check_value("K_2", 0, 1, self.K_2)
                 
                 self.phi_eq_2 = self.calc_phi_eq(self.A_eq_2)
                 
@@ -441,6 +445,11 @@ class Method_1:
                 
                 self.A_2 = self.r_in_pos_2*self.r_n_2/(self.fr.n_2*self.r_in_orf_2**2)
                 
+                self.phi_2 = self.calc_phi_eq(self.A_2)
+                                                
+                self.K_2 = self.A_eq_2/self.A_2
+                self.check_value("K_2", 0, 1, self.K_2)
+                
                 self.r_mn_2 = self.r_n_2*np.sqrt(1-self.phi_eq_2)
                 
                 self.r_mk_2 = self.r_mn_2 * np.sqrt(2*(1-self.phi_eq_2)/(2-self.phi_eq_2))
@@ -450,11 +459,18 @@ class Method_1:
                 
                 ## print dos dados da iteração
                 print("\nIt. %d)"%(self.contador+1))
-                self.print_data("A_2", "%.1f"%(self.A_2))
-                self.print_data("Phi_2", "%.2f"%(self.phi_2))
+                self.print_data("A_2", "%.4f"%(self.A_2))
+                self.print_data("A_eq_2", "%.4f"%(self.A_eq_2))
+                self.print_data("K_2", "%.4f"%(self.K_2))
+                self.print_data("Phi_2", "%.4f"%(self.phi_2))
+                self.print_data("Phi_eq_2", "%.4f"%(self.phi_eq_2))
+                self.print_data("rey_in_2", "%.4f"%(self.rey_in_2))
+                self.print_data("ksi_2", "%.4f"%(self.ksi_2))
+                self.print_data("lambda_2", "%.4f"%(self.lambda_2))
+                self.print_data("2Alpha ideal", "%.2f deg"%(self.alpha2_2))
+                self.print_data("2Alpha real", "%.2f deg"%(self.alpha2_eq_2))
                 self.print_data("R_n_2", "%.3f mm"%(self.r_n_2))
-                self.print_data("2Alpha ideal", "%.1f deg"%(self.alpha2_2))
-                self.print_data("2Alpha real", "%.1f deg"%(self.alpha2_eq_2))
+                self.print_data("r_in_2", "%.3f mm"%(self.r_in_orf_2))
                 
                 self.print_data("Erro", "%.2E"%(self.erro_r))
                 
@@ -563,7 +579,7 @@ class Method_1:
                     
                     self.r_out = self.r_n_2*np.sqrt(self.a_2*(1+(np.tan(self.alpha2_goal/2*np.pi/180))**-2))
                                 
-                    self.l_out = self.fr.ratio_l_n_out*self.r_n_2
+                    self.l_out = self.fr.ratio_l_n_out*2*self.r_n_2
                     
                     #self.phi_out = self.phi_eq_2/np.sqrt(3-2*self.phi_eq_2)
                     self.phi_out = self.phi_2/np.sqrt(3-2*self.phi_2)
@@ -972,6 +988,9 @@ class Method_1:
 
             elif(self.check_out == 0):
                 print("\n\nPlot: injector not plotted\n\t(Hydraulic Independance FAIL!)")
+                
+            elif(self.sh_plot_inj == 0):
+                print("\n\nPlot: injector not plotted\n\t(Disabled by user)")
                 
             else:
                 print("\n\nPlot: injector not plotted\n\t(Unknow Error)")

@@ -101,7 +101,7 @@ class Method_2:
         return 2*180/np.pi*np.arctan(np.sqrt(2*(1-phi)/phi))
     
     def calc_reynolds_in(self,m_in,din_visc,n,r_in_orf):
-        return 2*m_in/(din_visc*n*np.pi*r_in_orf)
+        return (2*m_in)/(din_visc*n*np.pi*r_in_orf)
     
     def calc_friction_coef(self, reynolds_in):
         #return 10**(25.8/(np.log(reynolds_in))-2)  #Bayvel
