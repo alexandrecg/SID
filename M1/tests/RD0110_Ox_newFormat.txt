@@ -1,0 +1,59 @@
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#File containing basic injector parameters for geometry calculation#### ##### #
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+
+#Injector ID
+injector_ID
+RD0110 - Ox
+
+#Propellant Configuration (Mono or Bi)
+config
+Mono
+
+#ST1 Type of channel entrance (curved or straigth)
+in_type_1
+curved
+
+#ST1 Straigth entrance radius [mm] (equal to 0.00 if entrance type is "curved")
+inlet_radius
+0.00
+
+#ST1 propellants
+propellant_1
+Liquid Oxygen (90 K)
+
+#ST1 mass flow [g/s]
+m_1
+172.9
+
+#ST1 DeltaP [bar]
+delta_p_1
+4.26
+
+#ST1 2Alpha start value [deg] (aprox. initial value)
+alpha2_1
+95
+
+#ST1 number of entrance channels
+n_1
+6
+
+#ST1 Inlet Radius to Nozzle Radius Ratio (aprox. initial value)
+opening_coef_1
+1.352
+
+#ST1 Conic Transition angle [deg]
+trans_angle_1
+45
+
+#ST1 inlet channel L/D
+ratio_l_in_1
+1.0
+
+#ST1 Swirl Chamber L/D
+ratio_l_s_1
+1.0
+
+#ST1 Nozzle L/D
+ratio_l_n_1
+1.0
