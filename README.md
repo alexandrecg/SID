@@ -1,10 +1,8 @@
 # SID
 **SID** stands for **Swirl Injector Design**. This project originated from some of the codes I've developed for my undergraduate thesis.
-
-Inline-style: 
+ 
 ![alt text](https://github.com/alexandrecg/SID/blob/main/RD0110_homepage.png "RD0110 Main Injector Initial Modeling")
 
-Inline-style: 
 ![alt text](https://github.com/alexandrecg/SID/blob/main/RD0110_F_mass_flow%20-%20homepage.png "RD0110 Fuel Injector Mass Flow Modeling")
 
 The original concept of the software developed in this project contemplates three tools.
