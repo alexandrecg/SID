@@ -1,0 +1,115 @@
+Identificação do injetor: 	 RD0110
+
+Configuração do injetor: 	 Bi
+
+ST1: Data read Successful
+ST2: Data read Successful
+Config:  Bi
+
+
+
+ ST1 Initial Values:
+|            A_1            |      2.09       |
+|           Phi_1           |      0.491      |
+|           R_n_1           |    2.515 mm     |
+|          2Alpha           |    110.5 deg    |
+
+
+
+
+
+ST1 Injector Geometry: 
+
+|    # of Inlet Channels    |       6.0       |
+|   Inlet Channel Radius    |    0.838 	mm    |
+|       Inlet Radius        |    3.504 	mm    |
+|   Swirl chamber Radius    |    4.342 	mm    |
+|       Nozzle Radius       |    2.695 	mm    |
+|       Nozzle Length       |   10.782 	mm    |
+|   Swirl Chamber Length    |   10.420 	mm    |
+|   Inlet Channel Length    |    1.675 	mm    |
+
+
+ST1 Injector Properties: 
+|        Propellant         | Liquid Oxygen (100 K)
+ |
+|          Delta P          |    4.26 bar     |
+|     Mass flow target      |   172.95 g/s    |
+|             A             |     2.2435      |
+|           A_eq            |     2.2377      |
+|             K             |     0.9974      |
+|            Phi            |     0.4771      |
+|          Phi_eq           |     0.4777      |
+|             a             |     0.3590      |
+|           a_eq            |     0.3585      |
+|            Ksi            |     0.9670      |
+|          Lambda           |     0.0077      |
+|           mu_i            |     0.2437      |
+|             C             |     1.3000      |
+|        2Alpha_avg         |    85.98 deg    |
+|          r_mk_1           |     1.61 mm     |
+|          r_mn_1           |     1.95 mm     |
+|         t_fluid_1         |     0.75 mm     |
+|  Expected non-uniformity  |     2.32 %      |
+
+
+
+
+
+ ST2 Initial Values:
+|            A_2            |      19.93      |
+|           Phi_2           |      0.153      |
+|           R_n_2           |    3.744 mm     |
+|          2Alpha           |    146.5 deg    |
+
+
+
+
+
+ST2 Injector Geometry: 
+
+|    # of Inlet Channels    |       6.0       |
+|   Inlet Channel Radius    |    0.396 	mm    |
+|       Inlet Radius        |    5.002 	mm    |
+|   Swirl chamber Radius    |    5.397 	mm    |
+|       Nozzle Radius       |    5.002 	mm    |
+|       Nozzle Length       |    5.002 	mm    |
+|   Swirl Chamber Length    |    4.857 	mm    |
+|   Inlet Channel Length    |    1.187 	mm    |
+
+
+ST2 Injector Properties: 
+|        Propellant         | kerosene (293 K)
+ |
+|          Delta P          |    6.96 bar     |
+|     Mass flow target      |    64.80 g/s    |
+|             A             |     26.6282     |
+|           A_eq            |     26.6282     |
+|             K             |     1.0000      |
+|            Phi            |     0.1289      |
+|          Phi_eq           |     0.1289      |
+|             a             |     0.8111      |
+|           a_eq            |     0.8111      |
+|            Ksi            |     1.0660      |
+|          Lambda           |     0.0324      |
+|           mu_i            |     0.0248      |
+|             C             |     1.0000      |
+|        2Alpha_avg         |   123.06 deg    |
+|          r_mk_2           |     4.50 mm     |
+|          r_mn_2           |     4.67 mm     |
+|         t_fluid_2         |     0.33 mm     |
+|  Expected non-uniformity  |     23.06 %     |
+
+
+Geometry Check: 	
+|           D_n_1           |    5.391 mm     |
+|           D_w_1           |    6.991 mm     |
+|           D_n_2           |    10.003 mm    |
+|        fluid_t_2_s        |    0.893 mm     |
+
+	Hydraulic Independance OK! 
+	DeltaR = 1.009 mm (mín: 0.09 mm)
+
+
+Plot: Modified injector not plotted
+	(Angle modification not needed or disabled by user)

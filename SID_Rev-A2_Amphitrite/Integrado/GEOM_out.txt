@@ -1,0 +1,21 @@
+#####  Injector Geometry  #####
+#Número de canais de entrada
+N_in = 2
+#Raio dos canais de entrada
+r_in = 0.40 #mm
+#Razão de aspecto do canal de entrada
+k_L = 3.0 #2.0 a 3.0
+#Raio da Câmara de Vórtice
+R_s = 3.00 #mm
+#Comprimento da Câmara de Vórtice
+L_cv = 4.00 #mm
+#Raio do Orifício de saída
+R_n = 1.50 #mm
+#Raio de Entrada dos canais
+R_in = R_s-r_in-0.05 #mm 
+
+
+
+
+
+

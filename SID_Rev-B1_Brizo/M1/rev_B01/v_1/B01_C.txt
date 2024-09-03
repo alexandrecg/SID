@@ -1,0 +1,68 @@
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#File containing basic injector parameters for geometry calculation#### ##### #
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#####
+#Injector ID
+B01_C
+#Propellant Configuration (Mono or Bi)
+Bi
+#Stage separation wall thickness [mm]
+1.0
+#Interstage clearance [% of ST2 r_mk fluid thickness]
+15
+#Interstage 2Alpha angle difference [deg]
+10.0
+#Recess length [mm]
+2.00
+#ST1 Type of channel entrance (curved or straigth)######################################################
+curved
+#ST1 Straigth entrance radius [mm] (equal to 0.00 if entrance type is "curved")
+0.00
+#ST1 propellants
+Liquid Oxygen (90 K)
+#ST1 mass flow [g/s]
+190.30
+#ST1 DeltaP [bar]
+6.00
+#ST1 2Alpha start value [deg] (aprox. initial value) (ref: 126.5)
+109.6
+#ST1 number of entrance channels
+6
+#ST1 Inlet Radius to Nozzle Radius Ratio (aprox. initial value)
+1.2
+#ST1 Conic Transition angle [deg]
+45
+#ST1 inlet channel L/D
+2.0
+#ST1 Swirl Chamber L/D
+1.25
+#ST1 Nozzle L/D
+2.00
+#ST2 Type of channel entrance (curved or straigth)######################################################
+curved
+#ST2 Straigth entrance radius [mm] (equal to 0.00 if entrance type is "curved")
+0.00
+#ST2 propellant
+Ethanol 95% (300 K)
+#ST2 mass flow [g/s]
+95.1
+#ST2 DeltaP [bar]
+4.00
+#ST2 2Alpha iteration initial value [deg]
+123
+#ST1 number of entrance channels
+6
+#ST2 Entrance Radius to Nozzle Radius Ratio
+1.0
+#ST1 Conic Transition angle [deg]
+45
+#ST2 inlet channel L/D
+1.0
+#ST2 Swirl Chamber L/D
+0.5
+#ST2 Nozzle L/D
+0.25
+#ST2 Modified nozzle L/D
+0.25
+#ST2 Modified nozzle transition angle [deg]
+45

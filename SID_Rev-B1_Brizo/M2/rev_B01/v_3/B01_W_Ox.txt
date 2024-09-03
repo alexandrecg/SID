@@ -1,0 +1,32 @@
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#File containing basic injector parameters for geometry calculation#### ##### #
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#####
+####Injector ID
+Rev-B01_W Oxidizer
+#00#ST1 Type of channel entrance (curved or straigth)
+curved
+#01#ST1 propellants
+Liquid Oxygen (90 K)
+#02#ST1 mass flow reference [g/s]
+20.80
+#03#ST1 DeltaP [bar]
+6.00
+#04#ST1 number of entrance channels
+3
+#05#ST1 Entrance Channels Radius [mm]
+0.352
+#06#ST1 Entrance Channels Length [mm]
+2.813
+#07#ST1 Entrance Channel Chamfer [mm] (Equal to 0.0 if entrance type equal to "curved")
+0.0
+#08#ST1 Swirl Chamber Radius [mm]
+1.470
+#09#ST1 Swirl Chamber Length [mm]
+5.879
+#10#ST1 Nozzle Radius [mm]
+0.93
+#11#ST1 Nozzle Length [mm]
+3.727
+#12#ST1 Entrance Radius [mm]
+1.118

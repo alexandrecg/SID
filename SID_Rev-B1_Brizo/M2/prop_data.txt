@@ -1,0 +1,61 @@
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#File containing physical properties of different propellants or test fluids ##
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#####
+#Number of propellants
+6
+#Number of properties per propellant
+4
+#Propellant name (Reference: -----)
+Ethanol 95% (300 K)
+#Propellant density [kg/m³] (Reference: -----)
+800.00
+#Propellant Dynamic Viscosity [Pa.s] (Reference: -----)
+1.095e-3
+#Propellant Surface Tension [N/m] (Reference: -----)
+-8.32e-5
+#####
+#Propellant name (Reference: -----)
+Liquid Oxygen (90 K)
+#Propellant density [kg/m³] (Reference: -----)
+1141.00
+#Propellant Dynamic Viscosity [Pa.s] (Reference: -----)
+2.21e-3
+#Propellant Surface Tension [N/m] (Reference: -----)
+Nan
+#####
+#Propellant name (Reference: -----)
+Water (300 K)
+#Propellant density [kg/m³] (Reference: -----)
+996.56
+#Propellant Dynamic Viscosity [Pa.s] (Reference: -----)
+8.53e-4
+#Propellant Surface Tension [N/m] (Reference: -----)
+-1.514e-4
+#####
+#Propellant name (Reference: https://etc-cte.ec.gc.ca/databases/OilProperties/pdf/WEB_Jet_A-Jet_A-1.pdf)
+Jet-A1 (300 K)
+#Propellant density [kg/m³] (Reference: WEB_Jet_A-Jet_A-1.pdf)
+807.50
+#Propellant Dynamic Viscosity [Pa.s] (Reference: WEB_Jet_A-Jet_A-1.pdf)
+2e-3
+#Propellant Surface Tension [N/m] (Reference: https://www.caafi.org/news/pdf/Edwards_AIAA-2017-0146_Reference_Jet_Fuels.pdf)
+2.4e-6
+#####
+#Propellant name (Reference: Alves_62845)
+kerosene (293 K)
+#Propellant density [kg/m³] (Reference: Alves_62845)
+800.00
+#Propellant Dynamic Viscosity [Pa.s] (Reference: Alves_62845)
+1.92e-3
+#Propellant Surface Tension [N/m] (Reference: Alves_62845)
+0.0260
+#####
+#Propellant name (Reference: Alves_62845)
+Liquid Oxygen (100 K)
+#Propellant density [kg/m³] (Reference: Alves_62845)
+1140.00
+#Propellant Dynamic Viscosity [Pa.s] (Reference: Alves_62845)
+7.64e-6
+#Propellant Surface Tension [N/m] (Reference: Alves_62845)
+0.0132

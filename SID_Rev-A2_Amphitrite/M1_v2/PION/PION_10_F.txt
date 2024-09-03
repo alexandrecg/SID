@@ -1,0 +1,40 @@
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#File containing basic injector parameters for geometry calculation#### ##### #
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#####
+#Injector ID
+Fuel
+#Propellant Configuration (Mono or Bi)
+Mono
+#Stage separation wall thickness [mm]
+0.0
+#Interstage clearance [% of ST2 r_mk fluid thickness]
+0.0
+#Interstage 2Alpha angle difference [deg]
+0.0
+#Recess length [mm]
+0.0
+#ST1 Type of channel entrance (curved or straigth)
+curved
+#ST1 Straigth entrance radius [mm] (equal to 0.00 if entrance type is "curved")
+0.0
+#ST1 propellants
+Ethanol 95% (300 K)
+#ST1 mass flow [g/s]
+63.8
+#ST1 DeltaP [bar]
+8.0
+#ST1 2Alpha start value [deg] (aprox. initial value) (ref: -)
+135.0
+#ST1 number of entrance channels
+6
+#ST1 Swirl chamber to Nozzle Radius Ratio (aprox. initial value)
+1.0
+#ST1 Conic Transition angle [deg]
+45
+#ST1 Entrance channel L/D
+4
+#ST1 Swirl Chamber L/D
+1.0
+#ST1 Nozzle L/D
+2.0

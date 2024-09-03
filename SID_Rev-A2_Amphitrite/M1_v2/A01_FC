@@ -1,0 +1,28 @@
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#File containing basic injector parameters for geometry calculation#### ##### #
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#####
+#Injector ID
+"A01 - Film Cooling"
+#Propellant Configuration ("Mono" or "Bi")
+"Mono"
+#Type of channel entrance ("curved" or "straigth")
+"curved"
+#ST1 propellants
+"Ethanol 95% (300 K)"
+#ST1 mass flow [kg/s]
+8.8e-3
+#ST1 DeltaP [bar]
+4.0
+#ST1 2Alpha start value [deg]
+120
+#ST1 number of entrance channels
+6
+#Swirl chamber to Nozzle Radius Ratio
+4
+#Entrance channel L/D
+6
+#Nozzle L/D
+3.0
+#Swirl Chamber L/D
+3.0

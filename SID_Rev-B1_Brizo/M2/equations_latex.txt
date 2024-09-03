@@ -1,0 +1,49 @@
+calc \; geom \; char
+\\
+A = \frac{R_{in} \cdot R_n}{(n \cdot (r_{in})^2+\frac{\lambda}{2} \cdot R_{in}(R_{in}-R_n))}
+\\\;
+\\
+calc \; 2alpha
+\\
+2\alpha = 2 \cdot \frac{180}{\pi} \cdot atan(\sqrt{\frac{2 \cdot (1-\phi)}{\phi}}\;)
+\\\;
+\\
+calc\;reynolds\;in
+\\
+Re_{in} = \frac{2 \cdot \dot{m}_{in}}{din_{visc} \cdot \sqrt{n} \cdot \pi \cdot r_{in}}
+\\\;
+\\
+calc\;friction\;coef
+\\
+\lambda_{Bazarov} = 0.3164 \cdot Re_{in}^{-0.25}
+\\
+\lambda_{Bayvel} = 10^{\frac{25.8}{log(Re_{in})^{2.58}}-2}
+\\\;
+\\
+calc\;hyd\;loss
+\\
+\alpha_{in} = 90 - \frac{180}{\pi} \cdot atan(R_s/l_{in})
+\\
+\xi_{in} = -1 \cdot \alpha_{in}/150 + 1.1
+\\
+\xi_i = \xi_{in} + \lambda \cdot l_{in}/(2 \cdot r_{in})
+\\\;
+\\
+calc\;geom\;char\;eq
+\\
+A_{eq} = \frac{R_{in} \cdot R_n}{(n \cdot r_{in}^2+\frac{\lambda}{2} \cdot R_{in} \cdot (R_{in}-R_n))}
+\\\;
+\\
+calc\;\mu_{eq}
+\\
+\mu_{eq} = \frac{\phi_{eq}^{1.5}}{\sqrt{2-\phi_{eq}}}
+\\\;
+\\
+calc\;\mu_i
+\\
+\mu_i = \frac{\mu_{eq}}{\sqrt{(1+\xi \cdot \mu_{eq}^2 \cdot (A \cdot (R_{in}/R_n))^2)}}
+\\\;
+\\
+calc\;non\;uniformity
+\\
+I = \frac{23.7}{((R_{in}/R_n)^{2.7} \cdot n^{1.34} \cdot \phi_{eq}^{1.1} \cdot (l_s/(2 \cdot R_s))^{0.15})}

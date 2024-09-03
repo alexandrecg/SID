@@ -1,0 +1,9 @@
+var1
+float
+un.
+var2
+string
+ad.
+var3
+float
+kg

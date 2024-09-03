@@ -1,0 +1,32 @@
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#File containing basic injector parameters for geometry calculation#### ##### #
+##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### ##### #
+#####
+####Injector ID
+Alves - F
+#00#ST1 Type of channel entrance (curved or straigth)
+curved
+#01#ST1 propellants
+Kerosene (300 K)
+#02#ST1 mass flow reference [g/s]
+57
+#03#ST1 DeltaP [bar]
+6.96
+#04#ST1 number of entrance channels
+6
+#05#ST1 Inlet Channels Radius [mm]
+0.40
+#06#ST1 Inlet Channels Length [mm]
+2.40
+#07#ST1 Inlet Channel Chamfer [mm] (Equal to 0.0 if entrance type equal to "curved")
+0.0
+#08#ST1 Swirl Chamber Radius [mm]
+5.10
+#09#ST1 Swirl Chamber Length [mm]
+4.40
+#10#ST1 Nozzle Radius [mm]
+5.10
+#11#ST1 Nozzle Length [mm]
+4.40
+#12#ST1 Entrance Radius [mm]
+4.70
